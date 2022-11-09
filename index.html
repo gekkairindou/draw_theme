@@ -11,6 +11,13 @@
         </header>
         <main>
             <button>お題を出す</button>
+            <p id="theme"></p>
         </main>
     </body>
+    <script>
+        function ranTheme() {
+            var token = ["三日月宗近","三日月宗近・極","小狐丸", "小狐丸・極", "石切丸", "石切丸・極"]
+            docment.getElementById("theme").value = token[Math.floor(Math.random() * token.length)]
+        }
+    </script>
 </html>
